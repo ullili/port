@@ -1,0 +1,175 @@
+/**
+ * Author: 박태홍
+ *
+ * copyright: 무단 전제 및 배포 금지. 그린컴퓨터아카데미 수강생 실습용
+**/
+
+
+/* global */
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: '맑은 고딕', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+}
+.container {
+	width: 1000px;
+	margin: 50px auto; /* top/bottom left/right */
+	border: 1px solid #333;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+a.underline {
+	border-bottom: 2px solid;
+}
+a.underline:hover {
+	padding-bottom: 2px;
+}
+p {
+	text-align: justify;
+}
+.clear::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* header */
+.area-logo {
+	padding: 40px 0; /* top/bottom left/right */
+}
+.area-logo h1 {
+	margin: 0;
+}
+.area-logo h1 a {
+	display: block;
+	width: 100px;
+	margin: auto;
+	overflow: hidden;
+}
+.area-logo h1 a img {
+	width: 100%;
+	vertical-align: top;
+}
+.gnb {
+	margin: 0;
+	padding: 0 15px;  /* top/bottom left/right */
+	list-style: none;
+	background: #f2f2f2;
+}
+.gnb li {
+	float: left;
+	margin-right: 30px;
+}
+.gnb li:last-child {
+	margin-right: 0;
+}
+.gnb li a {
+	display: block;
+	line-height: 55px;
+	height: 55px;
+	padding: 0 8px;
+	border-top: 3px solid transparent;
+}
+.gnb li a:hover {
+	border-top: 3px solid;
+}
+
+/* title-show */
+.title-show {
+	height: 350px;
+	padding: 40px;
+	background-image: url("images/bg_show.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.title-box {
+	width: 300px;
+	padding: 30px 20px;  /* top/bottom left/right */
+	background: rgba(255, 255, 255, .85);
+}
+.title-box h3 {
+	margin-top: 0;
+}
+
+/* grid */
+.grid {
+	padding: 30px 15px; /* top/bottom left/right */
+	margin-bottom: 30px;
+}
+.grid div {
+	float: left;
+	width: 25%;
+}
+.grid h3 {
+	margin: 0;
+	font-size: 18px;
+}
+.grid img {
+	width: 100%;
+}
+.grid p {
+	font-size: 0.9em;
+	padding-right: 1em;
+	margin: 0 0 .5em;
+}
+.grid a {
+	font-size: 0.9em;
+}
+
+/* main */
+.main {
+	padding: 15px 15px 45px; /* top left/right bottom */
+}
+.content,
+.right-sidebar {
+	border: 1px solid #333;
+	padding: 15px;
+}
+.content {
+	float: left;
+	width: 763px;
+	min-height: 700px;
+}
+.content h2 {
+	margin-top: 0;
+}
+.right-sidebar {
+	float: right;
+	width: 190px;
+}
+.right-sidebar div {
+	margin-bottom: 30px;
+}
+.right-sidebar div:last-child {
+	margin-bottom: 0;
+}
+.right-sidebar h1 {
+	margin-top: 0;
+}
+.right-sidebar p {
+	font-size: 0.9em;
+	margin: 0 0 .5em;
+}
+.right-sidebar a {
+	font-size: 0.9em;
+}
+
+/* footer */
+.main-footer {
+	height: 100px;
+	background-color: #f1f1f1;
+}
+.main-footer p {
+	margin: 0;
+	line-height: 100px;
+	text-align: center;
+	text-transform: uppercase;
+}
